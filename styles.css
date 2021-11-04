@@ -1,7 +1,4 @@
 html {
-    background-color: #fff;
-    color: #1769a2;
-    font-family: "Monda", sans-serif;
     margin: 30px 50px;
     /* margin-bottom: 45px; */
     box-sizing: border-box;
@@ -11,6 +8,12 @@ html {
 *::before,
 *::after {
     box-sizing: inherit;
+}
+
+body {
+    background-color: #fff;
+    color: #1769a2;
+    font-family: "Monda", sans-serif;
 }
 
 .dropBox {
