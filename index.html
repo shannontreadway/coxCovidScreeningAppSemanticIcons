@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shannon's Redo of CoxHealth COVID Screening</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Monda&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href = "styles.css">
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        <h1>COVID-19 Self Assessment Form</h1>
+        <h2>The following are health screening questions asked to everyone who wants to gain access to the premises.</h2>
+
+        <form>
+            <h3>Have you or any of you close contacts tested positive for COVID in the last 14 days? Are you or any of your close contacts under waiting on results of a COVID test that was taken because of experiencing symptoms?</h3>
+            <select name="covidPositive" id="covidPositive" class="dropBox">
+                <option value="choose">Choose:</option>
+                <option value="no">No</option>
+                <option value="yes">Yes</option>
+            </select>
+
+
+            <h3>Do you have any one of the following new symptoms?</h3>
+            <ul>
+                <li>Fever</li>
+                <li>Cough</li>
+                <li>Shortness of breath or difficulty breathing</li>
+                <li>New loss of taste or smell</li>
+                <li>Headache with a known COVID exposure</li>
+                <li>Sore throat</li>
+                <li>Muscle or body aches</li>
+                <li>Chills or repeated shaking with chills</li>
+                <li>Congestion or runny nose</li>
+                <li>Nausea or vomiting</li>
+                <li>Diarrhea</li>
+            </ul>
+            <select name="symptomCheck" id="symptomCheck" class="dropBox">
+                <option value="choose">Choose:</option>
+                <option value="no">No</option>
+                <option value="yes">Yes</option>
+            </select>
+
+
+            <p>By completing this questionnaire, I affirm the answers I have provided above are accurate.  In addition, I agree to follow required safety precautions mandated by CoxHealth.  At a minimum, those include wearing a mask that covers my nose and mouth at all times while on any CoxHealth campus, unless I am alone in a private office safely distanced from others.  I also understand that I may be subject to disciplinary action, up to and including termination of employment, if I fail to follow the safety precautions mandated by CoxHealth.</p>
+
+            <div id="checkbox">
+                <input type="checkbox" name="iAttest" id="iAttest" required/>
+                <label for="iAttest" id="pCheckbox">By checking this box and submitting this form, I am electronically signing this COVID-19 screening form.</label>
+            </div>
+
+            <a id="continue" href="#">Continue</a>
+        </form>
+    </body>
+</html>
+
+
+<!-- Error: Please select. All fields required. -->
+<!--Order: index > assessmentSubmitted > approved/notApproved > pass/fail-->

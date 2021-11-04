@@ -1,0 +1,76 @@
+html {
+    background-color: #fff;
+    color: #1769a2;
+    font-family: 'Monda', sans-serif;
+    margin: 30px 50px;
+    margin-bottom: 45px;
+}
+
+.dropBox {
+    background-color: #1769a2;
+    color: #fff;
+}
+
+#checkbox {
+    display: flex;
+    align-items:center;
+}
+
+#pCheckbox {
+    padding-left: 10px;
+}
+
+#fail {
+    max-width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#pass {
+    max-width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#date {
+    font-weight: bolder;
+}
+
+#continue {
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+@media screen and (max-width: 600px){
+    .dropBox {
+        width: 75%;
+        height: 50px;
+        font-size: 25px;
+    }
+    
+    #pCheckbox {
+        font-size: 1.5em;
+    }
+    
+    #date {
+        font-size: 1.5em;
+    }
+    
+    #iAttest {
+        width: 75px;
+        height: 75px;
+    }
+    
+    #continue {
+        font-size: 1.5em;
+        color: #262626;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    #fail {
+        max-width: 50%;
+    }
+}
