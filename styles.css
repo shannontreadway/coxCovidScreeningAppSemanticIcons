@@ -1,9 +1,16 @@
 html {
     background-color: #fff;
     color: #1769a2;
-    font-family: 'Monda', sans-serif;
+    font-family: "Monda", sans-serif;
     margin: 30px 50px;
-    margin-bottom: 45px;
+    /* margin-bottom: 45px; */
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
 }
 
 .dropBox {
@@ -11,27 +18,28 @@ html {
     color: #fff;
 }
 
+.icon-container {
+    display: flex;
+    /* width: 100%; */
+}
+
+.icon-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.icon {
+    margin: 0;
+}
+
 #checkbox {
     display: flex;
-    align-items:center;
+    align-items: center;
 }
 
 #pCheckbox {
     padding-left: 10px;
-}
-
-#fail {
-    max-width: 75%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#pass {
-    max-width: 75%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 #date {
@@ -43,34 +51,33 @@ html {
     padding-bottom: 30px;
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
+    html {
+        margin: 20px 15px;
+        padding-bottom: 25px;
+    }
+
     .dropBox {
         width: 75%;
         height: 50px;
         font-size: 25px;
     }
-    
+
     #pCheckbox {
         font-size: 1.5em;
     }
-    
+
     #date {
         font-size: 1.5em;
     }
-    
+
     #iAttest {
         width: 75px;
         height: 75px;
     }
-    
+
     #continue {
         font-size: 1.5em;
         color: #262626;
-    }
-}
-
-@media screen and (min-width: 700px) {
-    #fail {
-        max-width: 50%;
     }
 }
